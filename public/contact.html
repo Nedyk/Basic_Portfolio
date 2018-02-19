@@ -2,29 +2,75 @@
 <htm lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Portfoli| Neddy Nyatome</title>
+	<title>Contact| Neddy Nyatome</title>
 	
 	 <link rel="stylesheet" type="text/css" href="hw1style2.css">
     <link rel="stylesheet" type="text/css" href="hw1style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 
 
 <body>
-	<header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Neddy Nyatome</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+
+	<nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>    
+    <a class="navbar-brand" href="#">Neddy Nyatome</a>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-left">
+        
+        
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    	<li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">My skills</a></li>
+      <li><a href="contact.html">Contact me</a></li>
+    </ul>
+  </div>
+</nav>
+	<!-- <header id="masthead">    
+      <div class="container">      
+        <a href="index.html" id="logo">Neddy Nyatome</a>      
+          <nav>        
+            <a href="index.html">About</a>        
+              <a href="portfolio.html">My Skills</a>        
+                <a href="contact.html">Contact</a>      
+                  </nav>    
+                    </div>  
+                      </header> -->
+          <hr>
+          <br>
+          <br>
+        <div class="container">
+  <h2>Contact Me</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+     	<label for="name">Name:</label>
+		<input id="Name" name="Fullname" type="text" placeholder="Please enter your name" required="required">
     </div>
-  </header>
-  
-  <div id="main-container" class="container">
+    <div class="form-group">
+      	<label for="email">Email:</label>
+		<input id="email" type="email" name="email" placeholder="example@gmail.com" required="required">
+    </div>
+     <div class="form-group">
+      		<label for="Message">Message:</label>
+			<textarea id="Message" name="Message" required="required"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+  <!-- <div id="main-container" class="container">
   	<section clas="main-section">
-	<h1>Contact</h1>
+	<h2>Contact me</h2>
 	
 	
 	<form id="contact-form">
@@ -49,7 +95,9 @@
 
 	</form>
 </section>
-
+ -->
+<br>
+<br>
     
 	
 	<section class="sidebar">
@@ -71,7 +119,7 @@
 
     <footer>
 	<div class="container">
-    	Copyright &copy; 2017 Neddy Nyatome
+    	Copyright &copy; 2018 Neddy Nyatome
 		</div>
     </footer>
 </body>
