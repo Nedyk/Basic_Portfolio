@@ -1,29 +1,39 @@
 
-// Dependencies
-// =============================================================
-var express = require("express");
-var bodyParser = require("body-parser");
 
-// Sets up the Express App
-// =============================================================
-var app = express();
+
+var express = require('express')
+var bodyParser = require('body-parser')
+var path = require('path')
+var app = express()
+ 
+ app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "../Portfolio/experience/Basic_Portfolio/index.html"));
+  });
+
+  app.get("/myskills", function(req, res) {
+    res.sendFile(path.join(__dirname, "../portfolio/public/portfolio.html"));
+  });
+
+  app.get("/contact", function(req, res) {
+    res.sendFile(path.join(__dirname, "../portfolio/public/contact.html"));
+  });
+
 var PORT = process.env.PORT || 3000;
+ 
 
-// Sets up the Express app to handle data parsing
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text());
-app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-// Static directory to be served
-app.use(express.static("app/public"));
+app.use(bodyParser.urlencoded({ extended: false }))
+ 
+// parse application/json
+app.use(bodyParser.json())
+ 
+app.use(function (req, res) {
+  res.setHeader('Content-Type', 'text/plain')
+  res.write('you posted:\n')
+  res.end(JSON.stringify(req.body, null, 2))
+})
 
-// Routes
-// =============================================================
-require("./app/routes/api-routes.js")(app);
-
-// Starts the server to begin listening
-// =============================================================
 app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
-});
+	console.log("App listening on PORT " + PORT)
+}); 
+

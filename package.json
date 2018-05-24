@@ -1,39 +1,26 @@
 {
-  "name": "portfolio",
+  "name": "basic_portfolio",
   "version": "1.0.0",
-  "description": "This portfolio showcases Neddy Nyatome's programming projects over time",
-  "main": "index.js",
+  "description": "portfolio to showcase Nedy Nyatome's programming skills",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nedyk/Responsive_portfolio.git"
+    "url": "git+https://github.com/Nedyk/Basic_Portfolio.git"
   },
   "keywords": [
-    "JS",
-    "node",
-    "mysql",
-    "express",
-    "boostrap",
-    "html5"
+    "express"
   ],
   "author": "Neddy Nyatome",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Nedyk/Responsive_portfolio/issues"
+    "url": "https://github.com/Nedyk/Basic_Portfolio/issues"
   },
-  "homepage": "https://github.com/Nedyk/Responsive_portfolio#readme",
+  "homepage": "https://github.com/Nedyk/Basic_Portfolio#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js"
-  },
-
-   "author": "",
-  "license": "ISC"
+    "nodemon": "^1.17.5"
+  }
 }
