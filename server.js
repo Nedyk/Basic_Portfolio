@@ -7,15 +7,15 @@ var path = require('path')
 var app = express()
  
  app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../Portfolio/experience/Basic_Portfolio/index.html"));
+    res.sendFile(path.join(__dirname, "../Basic_Portfolio/public/index.html"));
   });
 
   app.get("/myskills", function(req, res) {
-    res.sendFile(path.join(__dirname, "../portfolio/public/portfolio.html"));
+    res.sendFile(path.join(__dirname, "../Basic_Portfolio/public/portfolio.html"));
   });
 
   app.get("/contact", function(req, res) {
-    res.sendFile(path.join(__dirname, "../portfolio/public/contact.html"));
+    res.sendFile(path.join(__dirname, "../Basic_Portfolio/public/contact.html"));
   });
 
 var PORT = process.env.PORT || 3000;
