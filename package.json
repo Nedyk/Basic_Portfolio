@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/Nedyk/Basic_Portfolio#readme",
   "dependencies": {
-    "nodemon": "^1.17.5"
+    "nodemon": "^2.0.22"
   }
 }
